@@ -1,0 +1,68 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.food-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.foods-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.food-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  padding: 20px;
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.food-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.food-image {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.food-title {
+  font-size: 0.4em; /* Küçültmek için font boyutunu 1em veya istediğiniz değere ayarlayın */
+  font-weight: 300; /* İnce bir yazı tipi için */
+  margin: 10px 0;
+  color: #333;
+}
+
+
+.detail-button {
+  background-color: #6a5acd;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.detail-button:hover {
+  background-color: #dda0dd;
+}

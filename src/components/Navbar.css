@@ -1,0 +1,92 @@
+/* Navbar genel stil */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e6e6fa; /* Lavanta arka plan */
+  padding: 20px;
+  position: sticky; /* Sayfa kaydırıldığında yukarıda sabit kalır */
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo stili */
+.navbar-logo a {
+  color: #6a5acd; /* Lavanta moru logo yazısı */
+  font-size: 1.8rem;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Menü listesi stil */
+.navbar-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Menü elemanları stil */
+.navbar-list li {
+  margin: 0 20px;
+}
+
+/* Link stil */
+.navbar-list li a {
+  color: #4b0082; /* İndigo mor link metin */
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif;
+  transition: color 0.3s ease; /* Geçiş animasyonu */
+  position: relative;
+}
+
+/* Link hover efekti */
+.navbar-list li a:hover {
+  color: #dda0dd; /* Hover durumunda daha açık lavanta rengi */
+}
+
+/* Alt çizgi animasyonu */
+.navbar-list li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #dda0dd; /* Lavanta tonunda alt çizgi */
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.navbar-list li a:hover::after {
+  width: 100%; /* Hover durumunda alt çizgi animasyonu */
+}
+
+/* Mobil uyum */
+@media (max-width: 768px) {
+  .navbar-list {
+    flex-direction: column; /* Menü dikey hale gelir */
+    align-items: center;
+    display: none; /* Menü gizlenir */
+  }
+
+  .navbar-list li {
+    margin: 10px 0;
+  }
+
+  /* Menü görünür duruma gelir */
+  .navbar.active .navbar-list {
+    display: flex;
+  }
+
+  /* Menü görünür duruma getiren buton */
+  .navbar-toggle {
+    display: block;
+    font-size: 1.5rem;
+    color: #4b0082; /* Mobil menü butonu lavanta moru */
+    cursor: pointer;
+  }
+}

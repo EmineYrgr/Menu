@@ -1,0 +1,8 @@
+/* src/pages/Checkout.css */
+.checkout-container {
+    padding: 20px;
+    background-color: #1F1F1F; /* Koyu arka plan */
+    color: #E0E0E0; /* Açık yazı rengi */
+    text-align: center; /* Ortalı metin */
+  }
+  

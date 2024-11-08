@@ -1,0 +1,59 @@
+/* Ana konteyner */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  background-color: #e6e6fa; /* Lavanta arka plan */
+}
+
+/* İçerik alanı */
+.home-content {
+  background-color: #e6e6fa ; /* Arka planı şeffaf hale getirme */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Hafif gölge efekti */
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Başlık stili */
+.home-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif; /* Modern font seçimi */
+  font-weight: bold;
+}
+
+/* Açıklama metni stili */
+.home-description {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+}
+
+/* Alt başlık stili */
+.home-subtitle {
+  font-size: 1.2rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+/* Medya sorguları: Mobil uyum */
+@media (max-width: 768px) {
+  .home-title {
+    font-size: 2rem;
+  }
+
+  .home-description {
+    font-size: 1.2rem;
+  }
+
+  .home-subtitle {
+    font-size: 1rem;
+  }
+}
